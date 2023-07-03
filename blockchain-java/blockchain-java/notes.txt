@@ -1,0 +1,60 @@
+1) Get Transaction Receipt Status
+    module = 'transaction'
+    action = 'gettxreceiptstatus'
+    txhash = '0x83c9fb2a58546693ee4e29554789c164c9ec30d6218cffbbd800a248f7b399bf'
+    apikey = 'NZK1YH5SNM9CGVJPF1TQAREYUWHGRUJWMN'
+
+    url: https://api.etherscan.io/api?module={module}&action={action}&txhash={txhash}&apikey={api_key}
+
+2) Get Transaction Details
+
+    module = 'account'
+    action = 'txlist'
+    address = '0x690b9a9e9aa1c9db991c7721a92d351db4fac990'
+    apikey = 'NZK1YH5SNM9CGVJPF1TQAREYUWHGRUJWMN'
+    url: https://api.etherscan.io/api?module={module}&action={action}&address={address}&apikey={api_key}
+
+3)  Get Token Balance
+
+    module = 'account'
+    action = 'tokenbalance'
+    address = '0x690b9a9e9aa1c9db991c7721a92d351db4fac990'
+    contractaddress = '0x388c818ca8b9251b393131c08a736a67ccb19297'
+    apikey = 'NZK1YH5SNM9CGVJPF1TQAREYUWHGRUJWMN'
+
+    url: https://api.etherscan.io/api?module={module}&action={action}&contractaddress={contractaddress}&address={address}&apikey={apikey}
+
+4)  Get Account Balance
+
+    module = 'account'
+    action = 'balance'
+    address = '0x690b9a9e9aa1c9db991c7721a92d351db4fac990'
+    apikey = 'NZK1YH5SNM9CGVJPF1TQAREYUWHGRUJWMN'
+    
+    url: https://api.etherscan.io/api?module={module}&action={action}&address={address}&apikey={apikey}
+
+5)  Get Multiple Account Balances
+
+    module = 'account'
+    action = 'balancemulti'
+    address = '0x690b9a9e9aa1c9db991c7721a92d351db4fac990'
+    apikey = 'NZK1YH5SNM9CGVJPF1TQAREYUWHGRUJWMN'
+    
+    url: https://api.etherscan.io/api?module={module}&action={action}&address={address}&apikey={apikey}
+
+6) Get Ethereum Supply Statistics
+
+    module = 'stats'
+    action = 'ethsupply'
+    apikey = 'NZK1YH5SNM9CGVJPF1TQAREYUWHGRUJWMN'
+
+    url: https://api.etherscan.io/api?module={module}&action={action}&apikey={apikey}
+
+7) Get Contract Source Code
+
+    module = 'contract'
+    action = 'getsourcecode'
+    apikey = 'NZK1YH5SNM9CGVJPF1TQAREYUWHGRUJWMN'
+    address = '0x690b9a9e9aa1c9db991c7721a92d351db4fac990'
+
+    url: https://api.etherscan.io/api?module={module}&action={action}&address={address}&apikey={apikey}
